@@ -1,0 +1,124 @@
+<div id="header">
+  <%= render partial: 'partials/header' %>
+</div>
+
+<div class="about">
+
+  <section class="section1">
+    <h1 class="shadow"></h1>
+  </section>
+
+
+
+
+  <section class="flex-con">
+
+    <h1>About Us</h1>
+
+    <div class="about-content">
+
+      <h2>
+        One-Stop Shopping Destination
+      </h2>
+
+      <p>
+        With hundreds of thousands of products across categories including health and beauty, home and living, fashion, mobiles and tablets, consumer electronics and home appliances among others, eCommerce is the place to visit for all your shopping needs.
+      </p>
+
+      <h2>
+        Easy and Accessible Shopping
+      </h2>
+
+      <p>
+        No more traffic jams, crowds and long queues! Shop anytime, anywhere via your computer and mobile phone. With our quick and reliable delivery service, just sit back, relax and your package will come to you.
+      </p>
+
+      <h2>
+        Safe and Secure Shopping
+      </h2>
+
+      <p>
+        Understanding the importance of safe and secure shopping, we provide our customers with a broad range of secure payment options including cash-on-delivery, where you pay in cash only when you receive your package.
+      </p>
+
+    </div>
+
+    <div class="features">
+
+      <div class="feature">
+        <%= link_to "http://www.facebook.com" , target: "_blank" do %>
+          <%= fa_icon 'facebook 4x'%>
+        <% end %>
+
+        <h2>Be Our Friends</h2>
+      </div>
+
+      <div class="feature">
+        <%= link_to "http://www.youtube.com" , target: "_blank" do %>
+          <%= fa_icon 'youtube 4x' %>
+        <% end %>
+
+        <h2>Watch The Cute Cats</h2>
+      </div>
+
+      <div class="feature">
+        <%= link_to "http://www.instagram.com" , target: "_blank" do %>
+          <%= fa_icon 'instagram 4x' %>
+        <% end %>
+
+        <h2>Be Our Followers</h2>
+      </div>
+
+      <div class="feature">
+        <%= link_to "http://www.snapchat.com" , target: "_blank" do %>
+          <%= fa_icon 'snapchat-ghost 4x' %>
+        <% end %>
+
+        <h2>Checkout Our Snaps</h2>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="flex-con team">
+
+    <h1>Meet The Team</h1>
+
+    <div class="features">
+
+      <div class="feature">
+        <div class="profile-pic">
+          <%= link_to "https://www.facebook.com/zuck?fref=ts", target: "_blank" do %>
+            <%= image_tag "h1.jpg" %>
+          <% end %>
+        </div>
+        <h2>Mark Zuckerberg</h2>
+      </div>
+
+      <div class="feature">
+        <div class="profile-pic">
+          <%= link_to "https://www.facebook.com/BillGates/" , target: "_blank" do %>
+            <%= image_tag "h2.jpg" %>
+          <% end %>
+        </div>
+        <h2>Bill Gates</h2>
+      </div>
+
+      <div class="feature">
+        <div class="profile-pic">
+          <%= link_to "https://www.facebook.com/SteveJobsLover/?fref=ts" , target: "_blank" do %>
+            <%= image_tag "h3.jpg" %>
+          <% end %>
+        </div>
+        <h2>Steve Jobs</h2>
+      </div>
+
+    </div>
+
+  </section>
+
+
+</div>
