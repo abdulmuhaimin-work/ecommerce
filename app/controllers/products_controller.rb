@@ -12,13 +12,14 @@ class ProductsController < ApplicationController
 
     if @product.save
       flash.now[:success] = "you've created a new product"
+      redirect_to products_path
     else
       flash.now[:danger] = @product.errors.full_messages
     end
   end
 
   def destroy
-    @product = Product.find_by(product_params)
+    @product = Product.find_by(id: params[:id])
     if @product.destroy
       redirect_to products_path
     else
