@@ -12,8 +12,8 @@ Rails.application.routes.draw do
   # root to: 'landing#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # root to: 'landing#index'
-  # get :about, to: 'static_pages#about'
-  resources :products, only: [:index]
+  get :about, to: 'static_pages#about'
+  resources :products
   resource :cart, only: [:show]
   resources :order_items, only: [:create, :update, :destroy]
   root to: 'products#index'
